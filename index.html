@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>청첩장 · 한기정 & 방지윤</title>
+  <link rel="icon" type="image/png" href="static/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Allura&family=Noto+Serif+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+  <link rel="stylesheet" href="static/css/style.css">
+  
+  <link rel="preload" as="image" href="image/main_pic.jpg">
+  
+</head>
+<body>
+  <div class="invitation-card">
+    <h2 class="header-script">Our wedding day</h2>
+
+    <div class="photo-section">
+      
+      <img src="image/main_pic.jpg" alt="한기정 & 방지윤" class="main-photo" fetchpriority="high" loading="eager" />
+      
+    </div>
+
+    <div class="details-wrap">
+      <div class="details-floral details-floral-left" aria-hidden="true">
+        <svg viewBox="0 0 40 120" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"><path d="M20 0 Q15 20 20 35 Q25 20 20 0 M20 40 L20 70 Q15 85 20 100 Q25 85 20 70 M18 45 Q12 55 18 65 M22 45 Q28 55 22 65"/></svg>
+      </div>
+      <div class="details-content">
+        <h1 class="couple-names">한기정 & 방지윤</h1>
+        <p class="event-datetime">2026.04.18.(토) 오후 4시 00분</p>
+        <p class="event-venue">제주정원</p>
+        <button type="button" class="btn-map" id="btnMap" aria-expanded="false" aria-controls="cardMap">지도 보기</button>
+      </div>
+      <div class="details-floral details-floral-right" aria-hidden="true">
+        <svg viewBox="0 0 40 120" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"><path d="M20 0 Q25 20 20 35 Q15 20 20 0 M20 40 L20 70 Q25 85 20 100 Q15 85 20 70 M22 45 Q28 55 22 65 M18 45 Q12 55 18 65"/></svg>
+      </div>
+    </div>
+
+    <div class="card-map" id="cardMap" aria-hidden="true" data-lat="33.470073" data-lng="126.783177" data-name="제주정원" data-street="제주 제주시 구좌읍 송당2길 25" data-lot="제주 제주시 구좌읍 송당리 1473-2" data-zip="63355">
+      <div class="card-map-header">
+        
+        <button type="button" class="card-map-close" id="cardMapClose" aria-label="닫기">닫기</button>
+      </div>
+      <div id="mapContainer" class="map-container" aria-label="제주정원 지도"></div>
+    </div>
+
+    
+    <div class="card-gallery">
+      <div class="card-gallery-flow">
+        <div class="card-gallery-track">
+          
+          <a href="#" class="card-gallery-thumb" data-full="image/1.jpg" aria-label="사진 보기"><img src="image/1.jpg" alt="" loading="lazy" /></a>
+          
+          <a href="#" class="card-gallery-thumb" data-full="image/10.jpg" aria-label="사진 보기"><img src="image/10.jpg" alt="" loading="lazy" /></a>
+          
+          <a href="#" class="card-gallery-thumb" data-full="image/11.jpg" aria-label="사진 보기"><img src="image/11.jpg" alt="" loading="lazy" /></a>
+          
+          <a href="#" class="card-gallery-thumb" data-full="image/12.jpg" aria-label="사진 보기"><img src="image/12.jpg" alt="" loading="lazy" /></a>
+          
+          <a href="#" class="card-gallery-thumb" data-full="image/13.jpg" aria-label="사진 보기"><img src="image/13.jpg" alt="" loading="lazy" /></a>
+          
+          <a href="#" class="card-gallery-thumb" data-full="image/14.jpg" aria-label="사진 보기"><img src="image/14.jpg" alt="" loading="lazy" /></a>
+          
+          <a href="#" class="card-gallery-thumb" data-full="image/15.jpg" aria-label="사진 보기"><img src="image/15.jpg" alt="" loading="lazy" /></a>
+          
+          <a href="#" class="card-gallery-thumb" data-full="image/16.jpg" aria-label="사진 보기"><img src="image/16.jpg" alt="" loading="lazy" /></a>
+          
+          <a href="#" class="card-gallery-thumb" data-full="image/17.jpg" aria-label="사진 보기"><img src="image/17.jpg" alt="" loading="lazy" /></a>
+          
+          <a href="#" class="card-gallery-thumb" data-full="image/18.jpg" aria-label="사진 보기"><img src="image/18.jpg" alt="" loading="lazy" /></a>
+          
+          <a href="#" class="card-gallery-thumb" data-full="image/19.jpg" aria-label="사진 보기"><img src="image/19.jpg" alt="" loading="lazy" /></a>
+          
+          <a href="#" class="card-gallery-thumb" data-full="image/2.jpg" aria-label="사진 보기"><img src="image/2.jpg" alt="" loading="lazy" /></a>
+          
+          <a href="#" class="card-gallery-thumb" data-full="image/20.jpg" aria-label="사진 보기"><img src="image/20.jpg" alt="" loading="lazy" /></a>
+          
+          <a href="#" class="card-gallery-thumb" data-full="image/3.jpg" aria-label="사진 보기"><img src="image/3.jpg" alt="" loading="lazy" /></a>
+          
+          <a href="#" class="card-gallery-thumb" data-full="image/4.jpg" aria-label="사진 보기"><img src="image/4.jpg" alt="" loading="lazy" /></a>
+          
+          <a href="#" class="card-gallery-thumb" data-full="image/5.jpg" aria-label="사진 보기"><img src="image/5.jpg" alt="" loading="lazy" /></a>
+          
+          <a href="#" class="card-gallery-thumb" data-full="image/6.jpg" aria-label="사진 보기"><img src="image/6.jpg" alt="" loading="lazy" /></a>
+          
+          <a href="#" class="card-gallery-thumb" data-full="image/7.jpg" aria-label="사진 보기"><img src="image/7.jpg" alt="" loading="lazy" /></a>
+          
+          <a href="#" class="card-gallery-thumb" data-full="image/8.jpg" aria-label="사진 보기"><img src="image/8.jpg" alt="" loading="lazy" /></a>
+          
+          <a href="#" class="card-gallery-thumb" data-full="image/9.jpg" aria-label="사진 보기"><img src="image/9.jpg" alt="" loading="lazy" /></a>
+          
+          <a href="#" class="card-gallery-thumb" data-full="image/main_pic.jpg" aria-label="사진 보기"><img src="image/main_pic.jpg" alt="" loading="lazy" /></a>
+          
+          
+          <a href="#" class="card-gallery-thumb" data-full="image/1.jpg" aria-label="사진 보기"><img src="image/1.jpg" alt="" loading="lazy" /></a>
+          
+          <a href="#" class="card-gallery-thumb" data-full="image/10.jpg" aria-label="사진 보기"><img src="image/10.jpg" alt="" loading="lazy" /></a>
+          
+          <a href="#" class="card-gallery-thumb" data-full="image/11.jpg" aria-label="사진 보기"><img src="image/11.jpg" alt="" loading="lazy" /></a>
+          
+          <a href="#" class="card-gallery-thumb" data-full="image/12.jpg" aria-label="사진 보기"><img src="image/12.jpg" alt="" loading="lazy" /></a>
+          
+          <a href="#" class="card-gallery-thumb" data-full="image/13.jpg" aria-label="사진 보기"><img src="image/13.jpg" alt="" loading="lazy" /></a>
+          
+          <a href="#" class="card-gallery-thumb" data-full="image/14.jpg" aria-label="사진 보기"><img src="image/14.jpg" alt="" loading="lazy" /></a>
+          
+          <a href="#" class="card-gallery-thumb" data-full="image/15.jpg" aria-label="사진 보기"><img src="image/15.jpg" alt="" loading="lazy" /></a>
+          
+          <a href="#" class="card-gallery-thumb" data-full="image/16.jpg" aria-label="사진 보기"><img src="image/16.jpg" alt="" loading="lazy" /></a>
+          
+          <a href="#" class="card-gallery-thumb" data-full="image/17.jpg" aria-label="사진 보기"><img src="image/17.jpg" alt="" loading="lazy" /></a>
+          
+          <a href="#" class="card-gallery-thumb" data-full="image/18.jpg" aria-label="사진 보기"><img src="image/18.jpg" alt="" loading="lazy" /></a>
+          
+          <a href="#" class="card-gallery-thumb" data-full="image/19.jpg" aria-label="사진 보기"><img src="image/19.jpg" alt="" loading="lazy" /></a>
+          
+          <a href="#" class="card-gallery-thumb" data-full="image/2.jpg" aria-label="사진 보기"><img src="image/2.jpg" alt="" loading="lazy" /></a>
+          
+          <a href="#" class="card-gallery-thumb" data-full="image/20.jpg" aria-label="사진 보기"><img src="image/20.jpg" alt="" loading="lazy" /></a>
+          
+          <a href="#" class="card-gallery-thumb" data-full="image/3.jpg" aria-label="사진 보기"><img src="image/3.jpg" alt="" loading="lazy" /></a>
+          
+          <a href="#" class="card-gallery-thumb" data-full="image/4.jpg" aria-label="사진 보기"><img src="image/4.jpg" alt="" loading="lazy" /></a>
+          
+          <a href="#" class="card-gallery-thumb" data-full="image/5.jpg" aria-label="사진 보기"><img src="image/5.jpg" alt="" loading="lazy" /></a>
+          
+          <a href="#" class="card-gallery-thumb" data-full="image/6.jpg" aria-label="사진 보기"><img src="image/6.jpg" alt="" loading="lazy" /></a>
+          
+          <a href="#" class="card-gallery-thumb" data-full="image/7.jpg" aria-label="사진 보기"><img src="image/7.jpg" alt="" loading="lazy" /></a>
+          
+          <a href="#" class="card-gallery-thumb" data-full="image/8.jpg" aria-label="사진 보기"><img src="image/8.jpg" alt="" loading="lazy" /></a>
+          
+          <a href="#" class="card-gallery-thumb" data-full="image/9.jpg" aria-label="사진 보기"><img src="image/9.jpg" alt="" loading="lazy" /></a>
+          
+          <a href="#" class="card-gallery-thumb" data-full="image/main_pic.jpg" aria-label="사진 보기"><img src="image/main_pic.jpg" alt="" loading="lazy" /></a>
+          
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+  <div class="gif-slide">
+    <div class="gif-row">
+      <div class="gif-column">
+        <img src="image/groom1.gif" alt="신랑" class="gif-item" loading="lazy" decoding="async" />
+        <div class="gif-info">
+          <p class="gif-info-line">신랑 : 한기정</p>
+          <p class="gif-info-line">혈액형 : AB형</p>
+          <p class="gif-info-line">키 : 200</p>
+          <p class="gif-info-line">몸무게 : 돼지</p>
+        </div>
+      </div>
+      <div class="gif-column">
+        <img src="image/bride1.gif" alt="신부" class="gif-item" loading="lazy" decoding="async" />
+        <div class="gif-info">
+          <p class="gif-info-line">신부 : 방지윤</p>
+          <p class="gif-info-line">혈액형 : AB형</p>
+          <p class="gif-info-line">키 : 165</p>
+          <p class="gif-info-line">몸무게 : 갈비</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="message-slide">
+    <div class="message-wrap">
+      <div class="message-floral message-floral-left" aria-hidden="true">
+        <svg viewBox="0 0 40 200" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" preserveAspectRatio="none"><path d="M20 0 L20 12 Q6 18 12 26 Q20 22 20 12 L20 28 Q34 34 28 42 Q20 38 20 28 L20 44 Q6 50 12 58 Q20 54 20 44 L20 60 Q34 66 28 74 Q20 70 20 60 L20 76 Q6 82 12 90 Q20 86 20 76 L20 92 Q34 98 28 106 Q20 102 20 92 L20 108 Q6 114 12 122 Q20 118 20 108 L20 124 Q34 130 28 138 Q20 134 20 124 L20 140 Q6 146 12 154 Q20 150 20 140 L20 156 Q34 162 28 170 Q20 166 20 156 L20 172 Q6 178 12 186 Q20 182 20 172 L20 200"/></svg>
+      </div>
+      <div class="message-content">
+        <p class="message-text">서로의 계절을 지나
+웃음과 위로가 되어준 시간 끝에,
+저희는 같은 방향을 바라보며
+결혼이라는 이름의 시작점에 서게 되었습니다.
+
+앞으로의 날들 또한
+오늘처럼 서로의 편이 되겠다는 약속,
+그 순간을 소중한 분들과 함께 나누고 싶습니다.
+
+따뜻한 축복으로 함께해 주세요.</p>
+        
+        <p class="message-text-footer">사정 상 가까운 곳에서 예식을 치루지 못해
+양해 부탁드립니다.</p>
+        
+      </div>
+      <div class="message-floral message-floral-right" aria-hidden="true">
+        <svg viewBox="0 0 40 200" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" preserveAspectRatio="none"><path d="M20 0 L20 12 Q34 18 28 26 Q20 22 20 12 L20 28 Q6 34 12 42 Q20 38 20 28 L20 44 Q34 50 28 58 Q20 54 20 44 L20 60 Q6 66 12 74 Q20 70 20 60 L20 76 Q34 82 28 90 Q20 86 20 76 L20 92 Q6 98 12 106 Q20 102 20 92 L20 108 Q34 114 28 122 Q20 118 20 108 L20 124 Q6 130 12 138 Q20 134 20 124 L20 140 Q34 146 28 154 Q20 150 20 140 L20 156 Q6 162 12 170 Q20 166 20 156 L20 172 Q34 178 28 186 Q20 182 20 172 L20 200"/></svg>
+      </div>
+    </div>
+  </div>
+
+  
+  <script>
+    (function() {
+      function copyToClipboard(text, done) {
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(text).then(done).catch(done);
+        } else {
+          var ta = document.createElement('textarea');
+          ta.value = text;
+          ta.style.position = 'fixed';
+          ta.style.left = '-9999px';
+          document.body.appendChild(ta);
+          ta.select();
+          try { document.execCommand('copy'); } catch (e) {}
+          document.body.removeChild(ta);
+          done();
+        }
+      }
+      document.querySelectorAll('.account-modal-copy').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          var raw = this.getAttribute('data-copy') || '';
+          var numbersOnly = raw.replace(/\D/g, '');
+          if (!numbersOnly) return;
+          copyToClipboard(numbersOnly, function() {
+            var orig = btn.textContent;
+            btn.textContent = '복사됨';
+            btn.disabled = true;
+            setTimeout(function() { btn.textContent = orig; btn.disabled = false; }, 1500);
+          });
+        });
+      });
+      function openAccountModal(id) {
+        var modal = document.getElementById(id);
+        if (!modal) return;
+        modal.classList.add('is-open');
+        modal.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+        try { history.pushState({ accountModal: id }, '', location.href); } catch (e) {}
+      }
+      function closeAccountModal(id) {
+        var modal = document.getElementById(id);
+        if (!modal) return;
+        modal.classList.remove('is-open');
+        modal.setAttribute('aria-hidden', 'true');
+        var anyOpen = document.querySelector('.account-modal.is-open');
+        if (!anyOpen) document.body.style.overflow = '';
+      }
+      window.addEventListener('popstate', function() {
+        var openModal = document.querySelector('.account-modal.is-open');
+        if (openModal && openModal.id) closeAccountModal(openModal.id);
+      });
+      document.getElementById('accountBtnGroom') && document.getElementById('accountBtnGroom').addEventListener('click', function() { openAccountModal('accountModalGroom'); });
+      document.getElementById('accountBtnBride') && document.getElementById('accountBtnBride').addEventListener('click', function() { openAccountModal('accountModalBride'); });
+      document.querySelectorAll('[data-close="accountModalGroom"]').forEach(function(el) {
+        el.addEventListener('click', function() {
+          if (document.getElementById('accountModalGroom').classList.contains('is-open')) history.back();
+        });
+      });
+      document.querySelectorAll('[data-close="accountModalBride"]').forEach(function(el) {
+        el.addEventListener('click', function() {
+          if (document.getElementById('accountModalBride').classList.contains('is-open')) history.back();
+        });
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key !== 'Escape') return;
+        var openModal = document.querySelector('.account-modal.is-open');
+        if (openModal) { e.preventDefault(); history.back(); }
+      });
+    })();
+  </script>
+
+  
+  <div class="gallery-popup" id="galleryPopup" aria-hidden="true">
+    <div class="gallery-popup-backdrop" id="galleryPopupBackdrop"></div>
+    <div class="gallery-popup-box">
+      <button type="button" class="gallery-popup-close" id="galleryPopupClose" aria-label="닫기">×</button>
+      <div class="gallery-popup-main-wrap">
+        <img src="" alt="" class="gallery-popup-main" id="galleryPopupMain" />
+      </div>
+      <div class="gallery-popup-swipe-zone" id="galleryPopupSwipeZone"></div>
+      <div class="gallery-popup-picker" id="galleryPopupPicker">
+        
+        <button type="button" class="gallery-popup-picker-thumb" data-url="image/1.jpg" aria-label="이 사진 보기"><img src="image/1.jpg" alt="" loading="lazy" /></button>
+        
+        <button type="button" class="gallery-popup-picker-thumb" data-url="image/10.jpg" aria-label="이 사진 보기"><img src="image/10.jpg" alt="" loading="lazy" /></button>
+        
+        <button type="button" class="gallery-popup-picker-thumb" data-url="image/11.jpg" aria-label="이 사진 보기"><img src="image/11.jpg" alt="" loading="lazy" /></button>
+        
+        <button type="button" class="gallery-popup-picker-thumb" data-url="image/12.jpg" aria-label="이 사진 보기"><img src="image/12.jpg" alt="" loading="lazy" /></button>
+        
+        <button type="button" class="gallery-popup-picker-thumb" data-url="image/13.jpg" aria-label="이 사진 보기"><img src="image/13.jpg" alt="" loading="lazy" /></button>
+        
+        <button type="button" class="gallery-popup-picker-thumb" data-url="image/14.jpg" aria-label="이 사진 보기"><img src="image/14.jpg" alt="" loading="lazy" /></button>
+        
+        <button type="button" class="gallery-popup-picker-thumb" data-url="image/15.jpg" aria-label="이 사진 보기"><img src="image/15.jpg" alt="" loading="lazy" /></button>
+        
+        <button type="button" class="gallery-popup-picker-thumb" data-url="image/16.jpg" aria-label="이 사진 보기"><img src="image/16.jpg" alt="" loading="lazy" /></button>
+        
+        <button type="button" class="gallery-popup-picker-thumb" data-url="image/17.jpg" aria-label="이 사진 보기"><img src="image/17.jpg" alt="" loading="lazy" /></button>
+        
+        <button type="button" class="gallery-popup-picker-thumb" data-url="image/18.jpg" aria-label="이 사진 보기"><img src="image/18.jpg" alt="" loading="lazy" /></button>
+        
+        <button type="button" class="gallery-popup-picker-thumb" data-url="image/19.jpg" aria-label="이 사진 보기"><img src="image/19.jpg" alt="" loading="lazy" /></button>
+        
+        <button type="button" class="gallery-popup-picker-thumb" data-url="image/2.jpg" aria-label="이 사진 보기"><img src="image/2.jpg" alt="" loading="lazy" /></button>
+        
+        <button type="button" class="gallery-popup-picker-thumb" data-url="image/20.jpg" aria-label="이 사진 보기"><img src="image/20.jpg" alt="" loading="lazy" /></button>
+        
+        <button type="button" class="gallery-popup-picker-thumb" data-url="image/3.jpg" aria-label="이 사진 보기"><img src="image/3.jpg" alt="" loading="lazy" /></button>
+        
+        <button type="button" class="gallery-popup-picker-thumb" data-url="image/4.jpg" aria-label="이 사진 보기"><img src="image/4.jpg" alt="" loading="lazy" /></button>
+        
+        <button type="button" class="gallery-popup-picker-thumb" data-url="image/5.jpg" aria-label="이 사진 보기"><img src="image/5.jpg" alt="" loading="lazy" /></button>
+        
+        <button type="button" class="gallery-popup-picker-thumb" data-url="image/6.jpg" aria-label="이 사진 보기"><img src="image/6.jpg" alt="" loading="lazy" /></button>
+        
+        <button type="button" class="gallery-popup-picker-thumb" data-url="image/7.jpg" aria-label="이 사진 보기"><img src="image/7.jpg" alt="" loading="lazy" /></button>
+        
+        <button type="button" class="gallery-popup-picker-thumb" data-url="image/8.jpg" aria-label="이 사진 보기"><img src="image/8.jpg" alt="" loading="lazy" /></button>
+        
+        <button type="button" class="gallery-popup-picker-thumb" data-url="image/9.jpg" aria-label="이 사진 보기"><img src="image/9.jpg" alt="" loading="lazy" /></button>
+        
+        <button type="button" class="gallery-popup-picker-thumb" data-url="image/main_pic.jpg" aria-label="이 사진 보기"><img src="image/main_pic.jpg" alt="" loading="lazy" /></button>
+        
+      </div>
+    </div>
+  </div>
+  <script>
+    (function() {
+      var popup = document.getElementById('galleryPopup');
+      var mainImg = document.getElementById('galleryPopupMain');
+      var mainWrap = mainImg && mainImg.parentElement;
+      var picker = document.getElementById('galleryPopupPicker');
+      var positionEl = document.getElementById('galleryPopupPosition');
+      var backdrop = document.getElementById('galleryPopupBackdrop');
+      var closeBtn = document.getElementById('galleryPopupClose');
+      if (!popup || !mainImg || !picker) return;
+      var thumbs = document.querySelectorAll('.card-gallery-thumb[data-full]');
+      var pickerThumbs = picker.querySelectorAll('.gallery-popup-picker-thumb');
+      var urls = Array.prototype.slice.call(pickerThumbs).map(function(b) { return b.getAttribute('data-url'); });
+      var currentIndex = 0;
+      var touchStartX = 0;
+      var focusReturnTarget = null;
+      function getUrlFilename(u) {
+        if (!u) return '';
+        var s = String(u).trim();
+        try { s = new URL(s, location.href).pathname; } catch (e) { s = s.replace(/^\/+/, ''); }
+        var seg = s.split('/').filter(Boolean);
+        return seg.length ? seg[seg.length - 1] : s;
+      }
+      function openPopup(url) {
+        var wasClosed = !popup.classList.contains('is-open');
+        focusReturnTarget = wasClosed ? document.activeElement : focusReturnTarget;
+        mainImg.src = url;
+        var urlFile = getUrlFilename(url);
+        currentIndex = -1;
+        for (var i = 0; i < urls.length; i++) {
+          if (getUrlFilename(urls[i]) === urlFile || urls[i] === url) {
+            currentIndex = i;
+            break;
+          }
+        }
+        if (currentIndex < 0) currentIndex = 0;
+        pickerThumbs.forEach(function(btn, i) {
+          btn.classList.toggle('is-active', i === currentIndex);
+        });
+        popup.classList.add('is-open');
+        popup.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+        var activeBtn = pickerThumbs[currentIndex];
+        if (activeBtn && picker) {
+          var runScroll = function() {
+            var pickerRect = picker.getBoundingClientRect();
+            var thumbRect = activeBtn.getBoundingClientRect();
+            var pickerWidth = pickerRect.width;
+            var thumbWidth = thumbRect.width;
+            var thumbLeftInView = thumbRect.left - pickerRect.left;
+            var thumbLeftInContent = picker.scrollLeft + thumbLeftInView;
+            var targetScroll = thumbLeftInContent - (pickerWidth / 2) + (thumbWidth / 2);
+            var maxScroll = picker.scrollWidth - pickerWidth;
+            targetScroll = Math.max(0, Math.min(targetScroll, maxScroll));
+            picker.scrollLeft = targetScroll;
+          };
+          if (wasClosed) {
+            requestAnimationFrame(function() {
+              requestAnimationFrame(runScroll);
+            });
+          } else {
+            runScroll();
+          }
+        }
+        if (wasClosed) {
+          try { history.pushState({ galleryPopup: true }, '', location.href); } catch (e) {}
+        }
+      }
+      function closePopup() {
+        if (focusReturnTarget && typeof focusReturnTarget.focus === 'function') {
+          focusReturnTarget.focus();
+        }
+        focusReturnTarget = null;
+        popup.classList.remove('is-open');
+        popup.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+      }
+      function goNext() {
+        if (urls.length === 0) return;
+        currentIndex = (currentIndex + 1) % urls.length;
+        openPopup(urls[currentIndex]);
+      }
+      function goPrev() {
+        if (urls.length === 0) return;
+        currentIndex = (currentIndex - 1 + urls.length) % urls.length;
+        openPopup(urls[currentIndex]);
+      }
+      function addSwipeListeners(el) {
+        if (!el || urls.length === 0) return;
+        el.addEventListener('touchstart', function(e) {
+          touchStartX = e.touches[0].clientX;
+        }, { passive: true });
+        el.addEventListener('touchend', function(e) {
+          var touchEndX = e.changedTouches[0].clientX;
+          var delta = touchStartX - touchEndX;
+          if (delta > 50) goNext();
+          else if (delta < -50) goPrev();
+        }, { passive: true });
+      }
+      addSwipeListeners(mainWrap);
+      var swipeZone = document.getElementById('galleryPopupSwipeZone');
+      addSwipeListeners(swipeZone);
+      thumbs.forEach(function(el) {
+        el.addEventListener('click', function(e) {
+          e.preventDefault();
+          var url = el.getAttribute('data-full');
+          if (url) openPopup(url);
+        });
+      });
+      pickerThumbs.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          var url = btn.getAttribute('data-url');
+          if (url) openPopup(url);
+        });
+      });
+      window.addEventListener('popstate', function() {
+        if (popup.classList.contains('is-open')) closePopup();
+      });
+      backdrop.addEventListener('click', function() {
+        if (popup.classList.contains('is-open')) history.back();
+      });
+      if (closeBtn) closeBtn.addEventListener('click', function() {
+        if (popup.classList.contains('is-open')) history.back();
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && popup.classList.contains('is-open')) {
+          e.preventDefault();
+          history.back();
+        }
+      });
+    })();
+  </script>
+  
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script>
+    (function() {
+      var btnMap = document.getElementById('btnMap');
+      var cardMap = document.getElementById('cardMap');
+      var mapClose = document.getElementById('cardMapClose');
+      var mapContainer = document.getElementById('mapContainer');
+      if (!btnMap || !cardMap || !mapContainer) return;
+      var mapInited = false;
+      var leafletMap = null;
+      function initMap() {
+        if (mapInited || typeof L === 'undefined') return;
+        var lat = parseFloat(cardMap.getAttribute('data-lat')) || 33.470073;
+        var lng = parseFloat(cardMap.getAttribute('data-lng')) || 126.783177;
+        leafletMap = L.map('mapContainer', { zoomControl: false, attributionControl: false }).setView([lat, lng], 14);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { attribution: '' }).addTo(leafletMap);
+        var weddingIcon = L.divIcon({
+          className: 'wedding-marker',
+          html: '<span aria-hidden="true">❤️</span>',
+          iconSize: [24, 24],
+          iconAnchor: [12, 24]
+        });
+        L.marker([lat, lng], { icon: weddingIcon }).addTo(leafletMap);
+        mapInited = true;
+      }
+      function openMap() {
+        btnMap.classList.add('is-hidden');
+        cardMap.classList.add('is-open');
+        cardMap.setAttribute('aria-hidden', 'false');
+        btnMap.setAttribute('aria-expanded', 'true');
+        try { history.pushState({ cardMap: true }, '', location.href); } catch (e) {}
+        setTimeout(function() {
+          initMap();
+          if (leafletMap) leafletMap.invalidateSize();
+        }, 350);
+      }
+      function closeMap() {
+        btnMap.classList.remove('is-hidden');
+        if (btnMap && typeof btnMap.focus === 'function') {
+          btnMap.focus();
+        }
+        setTimeout(function() {
+          cardMap.classList.remove('is-open');
+          cardMap.setAttribute('aria-hidden', 'true');
+          btnMap.setAttribute('aria-expanded', 'false');
+        }, 0);
+      }
+      window.addEventListener('popstate', function() {
+        if (cardMap.classList.contains('is-open')) closeMap();
+      });
+      btnMap.addEventListener('click', openMap);
+      if (mapClose) mapClose.addEventListener('click', function() {
+        if (cardMap.classList.contains('is-open')) history.back();
+      });
+    })();
+  </script>
+  <script>
+    (function() {
+      var _warn = console.warn;
+      console.warn = function() {
+        var msg = arguments[0] && String(arguments[0]);
+        if (msg && (msg.indexOf('aria-hidden') !== -1 || msg.indexOf('Blocked') !== -1 || msg.indexOf('assistive technology') !== -1 || msg.indexOf('inert') !== -1 || msg.indexOf('WAI-ARIA') !== -1)) {
+          return;
+        }
+        _warn.apply(console, arguments);
+      };
+    })();
+  </script>
+  <script>
+    (function() {
+      var art = [
+        '',
+        '  _    _            _      _  _                ',
+        ' | |  | |          | |    | |(_)               ',
+        ' | |  | |  ___   __| |  __| | _  _ __    __ _  ',
+        ' | |/\\| | / _ \\ / _` | / _` || || \'_ \\  / _` | ',
+        ' \\  /\\  /|  __/| (_| || (_| || || | | || (_| | ',
+        '  \\/  \\/  \\___| \\__,_| \\__,_||_||_| |_| \\__, | ',
+        '                                         __/ | ',
+        '                                        |___/  ',
+        '',
+        '              한기정  &  방지윤',
+        '              2026.04.18.(토)  오후 4시 00분',
+        '              제주정원',
+        '',
+        '              따뜻한 축복 감사합니다',
+        ''
+      ].join('\n');
+      console.log('%c' + art, 'color: #e91e8c; font-size: 12px; font-family: monospace; line-height: 1.35;');
+    })();
+  </script>
+</body>
+</html>
